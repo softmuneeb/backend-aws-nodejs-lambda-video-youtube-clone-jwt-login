@@ -1,12 +1,16 @@
 const express = require('express');
 const cors = require('cors');
+require('dotenv').config();
 const bcrypt = require('bcrypt');
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const jwt = require('jsonwebtoken');
 
 const app = express();
-const uri =
-  'mongodb+srv://softmuneeb:Mongo1212@mango.isigger.mongodb.net/?retryWrites=true&w=majority';
+const username = process.env.MONGO_USERNAME;
+const password = process.env.MONGO_PASSWORD;
+const host = process.env.MONGO_HOST;
+
+const uri = `mongodb+srv://${username}:${password}@${host}/?retryWrites=true&w=majority`;
 
 const client = new MongoClient(uri, {
   serverApi: {
