@@ -1,4 +1,4 @@
-# YouTube Clone App
+# Backend YouTube App Clone
 
 The YouTube Clone App is an innovative project designed to showcase skills and expertise in technologies such as AWS, Node.js, JWT, Lambda, video processing, and more. It serves as a platform to practice and demonstrate proficiency in these technologies.
 
