@@ -31,7 +31,8 @@ app.use(express.json());
 
 // Allow requests from specific origins or use '*' to allow any origin
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin:
+    'https://frontend-aws-nodejs-login-jwt-lambda-video-youtube-clone-b.pages.dev',
   optionsSuccessStatus: 204, // Some legacy browsers choke on 204
 };
 app.use(cors(corsOptions));
