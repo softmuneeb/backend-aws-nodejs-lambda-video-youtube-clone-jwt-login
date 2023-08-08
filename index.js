@@ -100,6 +100,10 @@ app.get('/protected-data', authenticate, (req, res) => {
   res.status(200).json({ data: 'This is some protected data' });
 });
 
+app.get('/', (req, res) => {
+  res.status(200).json({ data: 'Peace be upon you' });
+});
+
 function startServer() {
   const PORT = 3000;
   app.listen(PORT, () => {
